@@ -101,17 +101,17 @@ class CompteEpargne(CompteBancaire, ExportJSONMixin):
 # Bloc d'exécution manuelle pour tester la classe sans interaction externe
 if __name__ == "__main__":
     try:
-        compte1 = CompteBancaire("Alice", 100.0)
+        compte1 = CompteBancaire("Emma", 100.0)
         print(compte1)
         compte1.deposer(50)
         compte1.retirer(30)
         print(compte1)
 
-        compte2 = CompteEpargne("Bob", 200.0, 0.03)
+        compte2 = CompteEpargne("Michael", 200.0, 0.03)
         compte2.ajouter_interets()
         print(compte2)
 
-        data = {"titulaire": "Charlie", "solde": 500.0}
+        data = {"titulaire": "Michel", "solde": 500.0}
         compte3 = CompteBancaire.depuis_dict(data)
         print(compte3)
 
