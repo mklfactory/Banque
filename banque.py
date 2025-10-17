@@ -196,7 +196,7 @@ if __name__ == "__main__":
     """
     try:
         # Création d'un compte classique et opérations
-        compte1 = CompteBancaire("Emma", 100.0)
+        compte1 = CompteBancaire("Emma", 300.0)
         print(compte1)
         compte1.deposer(50)
         compte1.retirer(30)
